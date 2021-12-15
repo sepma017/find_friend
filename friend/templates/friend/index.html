@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Friend</title>
+</head>
+<body>
+{% for p in members %}
+    <hr/>
+    <h2><a href="{{p.get_absolute_url}}"> {{p.name}}</a></h2>
+    <h4><a href="{{p.get_absolute_url}}">{{p.email}}</a></h4>
+{% endfor %}
+</body>
+</html>
